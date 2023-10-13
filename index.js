@@ -39,6 +39,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/', (req,res) => {
+  res.send('Welcome To David Bridal Backend')
+})
+
 // Routes setup
 app.use('/auth', authRoutes);
 app.use('/products', productRoutes);
